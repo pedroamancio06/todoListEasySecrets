@@ -16,7 +16,6 @@
 4 - Rodar a aplicação:
    ##### npm run dev
 
-5 - Clicar na url em LOCAL, provavelmente será:
-  ##### http://localhost:5173/
-
+5 - Clicar na url em:
+  ##### -> LOCAL: 
    

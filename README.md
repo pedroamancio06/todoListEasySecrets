@@ -12,10 +12,12 @@
    ##### cd todoListEasySecrets 
 
 3 - Instalar as dependências:
-   ##### npm install
+
+    npm install
 
 4 - Rodar a aplicação:
-   ##### npm run dev
+   
+    npm run dev
 
 5 - Clicar na url em:
   ##### -> LOCAL: 

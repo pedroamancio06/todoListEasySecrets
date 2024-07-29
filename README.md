@@ -1,4 +1,4 @@
-# To do list - EasySecrets
+# To do list - EasySecrets  Instruções:
 
 ## Para instalar é necessário ter: Node.js e npm instalados.
 

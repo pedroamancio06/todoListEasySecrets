@@ -1,0 +1,30 @@
+/* Reset simples */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: var(--background-body-light);
+}
+
+#root {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  option {
+    font-size: .8rem;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  h2 { font-size: 1.5rem; }
+
+  body { padding: 1.5rem; }
+}

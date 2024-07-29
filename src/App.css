@@ -1,0 +1,178 @@
+:root {
+    /* 
+        Light Mode
+    */
+    --background-body-light: #7d88a9;
+    --background-todo-light: #f0f0f0f0;
+    --background-input-light: #ffffffcb;
+    --background-task-light: #ffffffcb;
+    --background-task_complete-light: #d3d3d3;
+    --background-container_tasks-light: #d4dae6;
+    --border-task-light: #CCCCCC;
+    
+    --color-input-light: #333333;
+    --color-primary-light: #333333;
+    --color-secundary-light: #666666;
+    --color-btn_add-light: #F0F0F0;
+    --back-btn-add-light: #3A6EA5;
+    
+    /* 
+    Dark Mode
+    */
+    --background-body-dark: #222222; /* Fundo geral da página */
+    --background-todo-dark: #2a2a2a; /* Fundo do container geral do To-Do List */
+    --background-input-dark: #404040; /* Fundo dos inputs */
+    --background-task-dark: #484848; /* Fundo das tarefas individuais */
+    --background-container-tasks-dark: #3b3b3b; /* Fundo do container que engloba as tarefas */
+    --background-btn_add-dark: #5a8fbd; /* Fundo do botão adicionar */
+    --background-task-complete-dark: #353535; /* Fundo das tarefas concluídas */
+
+    --color-btn_add-dark: #F0F0F0;
+    --color-primary-dark: #f5f5f5;
+    --color-secondary-dark: #b3b3b3;
+    --color-input-dark: #F0F0F0;
+    --border-task-dark: #555555;
+  
+    /* 
+        Buttons
+    */
+    --back-btn-edit: #007BFF;
+    --back-btn-concl: #28A745;
+    --back-btn-delete: #DC3545;
+  
+    --hover-concl: #218838;
+    --hover-delete: #C82333;
+    --hover-edit: #0056B3;
+}
+
+button { border: none; }
+
+/* 
+  Aplicando estilos padrões, pois esse elementos recebem os mesmos estilos
+*/
+
+h1,
+h2,
+h4 {
+  color: var(--color-primary-light);
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+input,
+select {
+  background-color: var(--background-input-light);
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid var(--border-task-light);
+  border-radius: 10px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: var(--color-input-light);
+}
+
+
+/* 
+    Estilos para a div principal App
+*/
+.header {
+    display: flex; 
+    align-items: start;
+    justify-content: space-between;
+}
+
+.todoContainer {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    background-color: var(--background-todo-light);
+    padding: 1.5rem 2rem;
+    margin: auto;
+}
+
+.titleTodo { 
+    flex: 1;
+    font-size: 2.3rem; 
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.btnMode {
+    cursor: pointer;
+    font-size: 2rem;
+    display: flex;
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    margin-left: 3rem;
+}
+
+.btnLight {
+    background-color: #c0c3d6;
+    color: #ffffff;
+}
+
+.btnDark {
+    background-color: #616161;
+    color: #ffffff;
+}
+
+/* 
+    Task Container
+*/
+.taskContainer,
+.emptyListTask {
+    background-color: var(--background-container_tasks-light);
+    border-radius: 10px;
+}
+
+.taskContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: .7rem;
+    padding: 1.2rem 1rem;
+}
+
+.emptyListTask {
+    text-align: center;
+    padding-block: 3rem;
+    color: var(--color-secundary-light);
+    font-size: 1.2rem;
+}
+
+/* Estilos para o modo Dark */
+.darkMode {
+    --background-body-light: var(--background-body-dark);
+    --background-todo-light: var(--background-todo-dark);
+    --background-input-light: var(--background-input-dark);
+    --background-task-light: var(--background-task-dark);
+    --background-task_complete-light: var(--background-task-complete-dark);
+    --background-container_tasks-light: var(--background-container-tasks-dark);
+    --back-btn-add-light: var(--background-btn_add-dark);
+    --color-primary-light: var(--color-primary-dark);
+    --color-secundary-light: var(--color-secondary-dark);
+    --color-input-light: var(--color-input-dark);
+    --border-task-light: var(--border-task-dark);
+}
+
+@media screen and (max-width: 830px) {
+    .todoContainer { 
+        width: 80%; 
+        max-width: 600px;
+        margin: auto;
+    }
+}
+
+@media screen and (max-width: 590px) {
+    .todoContainer {
+        width: 100%;
+        padding: 1.2rem;
+    }
+}

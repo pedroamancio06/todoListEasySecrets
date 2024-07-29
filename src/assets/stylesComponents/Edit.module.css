@@ -1,0 +1,26 @@
+.form { margin-right: 1rem; }
+
+.newTitle,
+.newDescription {
+    width: 100%;
+    margin-bottom: .7rem;
+}
+
+.btnSave {
+    width: 30%;
+    padding-block: .5rem;
+    border-radius: 10px;
+    border: none;
+    background-color: var(--back-btn-add-light);
+    color: var(--color-btn_add-dark);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.btnSave:hover { transform: scale(1.1); }
+
+@media screen and (max-width: 480px) {
+    .form { margin-right: 0; }
+}
+

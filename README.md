@@ -4,7 +4,7 @@
 
 ## Instalar: 
 1 - Clonar o repositório, no terminal do VSCode coloque:
-    ##### git clone https://github.com/pedroamancio06/todoListEasySecrets.git
+    git clone https://github.com/pedroamancio06/todoListEasySecrets.git
 
 2 - Ir até o diretório do projeto (o repositório depende da pasta que você instalou o repositório):
    Se estiver em uma pasta, navegue até ela com o "cd pasta " e depois o repositório "cd todoListEasySecrets", senão: 
